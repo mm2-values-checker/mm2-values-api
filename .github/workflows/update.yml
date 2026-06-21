@@ -1,8 +1,9 @@
 name: Update MM2 Values
 
 on:
+  workflow_dispatch: # ЭТОТ ПУНКТ ДОБАВИТ КНОПКУ РУЧНОГО ЗАПУСКА!
   schedule:
-    - cron: '*/30 * * * *' # Запуск каждые 30 минут
+    - cron: '*/30 * * * *'
 
 jobs:
   build:
